@@ -19,19 +19,23 @@ import logo13 from '../../assets/images/came/Nestle.png';
 import logo14 from '../../assets/images/came/Patterns-Technologies.png';
 import logo15 from '../../assets/images/came/Payatu.png';
 import logo16 from '../../assets/images/came/Real-Estate-Mall.png';
+import logo17 from '../../assets/images/came/Nestle.png';
+import logo18 from '../../assets/images/came/Patterns-Technologies.png';
+import logo19 from '../../assets/images/came/Payatu.png';
+import logo20 from '../../assets/images/came/Real-Estate-Mall.png';
 
 
 const sponsorsData = [
   {
     title: 'PARTICIPATING DELEGATES',
     logos: [
-      logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8,
+      logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8,logo9, logo10,
     ],
   },
   {
     title: 'PARTICIPATING DELEGATES',
     logos: [
-      logo9, logo10, logo11, logo12, logo13, logo14, logo15, logo16
+       logo11, logo12, logo13, logo14, logo15, logo16,logo17, logo18,logo19, logo20,
     ]
   },
 ];
@@ -48,7 +52,7 @@ const App = () => {
   };
 
   return (
-    <div className="flex poppins-regular flex-col justify-center items-center py-6 md:py-12 bg-[#F7F3EF] px-0 md:px-16 font-poppins">
+    <div className="flex poppins-regular flex-col justify-center overflow-hidden items-center py-6 md:py-12 bg-[#F7F3EF] px-0 md:px-16 font-poppins">
       {/* Heading above the slider */}
       <div className="text-xl md:text-3xl font-semibold text-gray-800 mb-6">
         Our Recruiters
@@ -59,7 +63,7 @@ const App = () => {
           <div key={index} className="flex flex-col items-center">
             <div className="flex flex-row justify-center items-center w-full px-4">
               <div
-                className="grid grid-cols-4 md:grid-cols-8 gap-4 justify-items-center w-full px-6"
+                className="grid grid-cols-5 md:grid-cols-8 gap-4 justify-items-center w-full px-6"
                 style={{ gridTemplateRows: 'repeat(2, auto)' }} // Enforcing only two rows
               >
                 {slide.logos.map((logo, idx) => (
