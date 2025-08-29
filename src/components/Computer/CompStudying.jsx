@@ -77,7 +77,7 @@ function CompStudying() {
           <div className="bg-[#F7F3EF] p-4 shadow-lg border-1 border-[#F37021] flex justify-between items-center rounded-lg" data-aos="zoom-in">
             <span className="flex items-center">
               <FaChartLine className="text-[#F37021] mr-4 text-4xl" /> {/* New Icon */}
-              <span className="text-sm">Practice Oriented Learning  </span> {/* New Text */}
+              <span className="text-sm">Practice- Oriented Learning  </span> {/* New Text */}
             </span>
           </div>
         </div>
