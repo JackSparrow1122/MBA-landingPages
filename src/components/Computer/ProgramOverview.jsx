@@ -1,18 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 // Import the image
-import ProgramImage from '../../assets/images/macpng.png';
-import HatImage from '../../assets/images/hat.png';  // Import the floating hat image
+import programmeImage from "../../assets/images/macpng.png";
+import HatImage from "../../assets/images/hat.png"; // Import the floating hat image
 
 // Import AOS and its CSS
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-function ProgramOverview() {
+function programmeOverview() {
   useEffect(() => {
     // Initialize AOS
     AOS.init({
       duration: 1000, // Animation duration (in ms)
-      easing: 'ease-in-out', // Easing function for the animation
+      easing: "ease-in-out", // Easing function for the animation
       once: true, // Whether the animation should happen only once
     });
   }, []);
@@ -28,18 +28,20 @@ function ProgramOverview() {
             alt="Hat"
             className="absolute left-[-25px] top-[-38px] w-16 h-16 animate-floating " // Apply floating animation class
           />
-          Program Overview
+          Programme Overview
         </h2>
         <p className="text-2xl text-gray-600 tracking-wide">
-          The MBA Department was established in the academic year 2007. Currently, the department offers one undergraduate program, B.E in Computer Engineering, with an intake of 120. The department has a team of highly qualified, motivated, and experienced faculty members with doctorates (Ph.D.) and M.E./M.Tech qualifications in various areas of specialization.
+         Indira Global School of Business (IGSB) offers a transformative two-year AICTE-approved MBA programme that blends academic excellence with real-world business insights. With global collaborations, diverse specializations, and industry-driven training, the programme emphasizes leadership, innovation, and ethical practices. Experiential learning through live projects, case studies, and international exposure ensures students gain the skills to thrive in a dynamic global economy.
         </p>
       </div>
 
       {/* Right Part: Image */}
-      <div className="flex-1 bg-[#F7F3EF]" data-aos="fade-left">  {/* Make container transparent */}
+      <div className="flex-1 bg-[#F7F3EF]" data-aos="fade-left">
+        {" "}
+        {/* Make container transparent */}
         <img
-          src={ProgramImage} // Use the imported image
-          alt="Program"
+          src={programmeImage} // Use the imported image
+          alt="programme"
           className="w-full h-auto "
         />
       </div>
@@ -66,4 +68,4 @@ function ProgramOverview() {
   );
 }
 
-export default ProgramOverview;
+export default programmeOverview;

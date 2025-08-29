@@ -8,11 +8,10 @@ function CompBrochure() {
     <div className="flex justify-between items-center bg-[#F7F3EF] bg-cover bg-center text-white shadow-lg h-48 px-8 md:px-16 poppins-regular">
       <div className="w-full bg-[#FCFAEE] p-6 rounded-3xl flex justify-between items-center border-1 border-[#f37021]">
         <div className="max-w-2/3 ">
-          <h2 className="text-2xl font-bold mb-4 text-[#F37021]">Syllabus</h2>
-          <p className="text-lg text-black">
-            Best-in-class content by leading trainers and industry leaders in
-            the form of videos, real life case studies, projects and
-            live-sessions.
+          <p className="text-lg text-[#F37021]">
+           Get the brochure to explore our industry-aligned, outcome-based curriculum and complete programme details.
+ 
+ 
           </p>
         </div>
         <div>

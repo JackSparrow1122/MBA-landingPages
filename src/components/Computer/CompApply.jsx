@@ -12,7 +12,7 @@ const AdmissionProcess = () => {
       <div className="relative z-10">
         <h2 className="text-3xl font-semibold mb-6 text-black">How to Apply</h2>
         <p className="text-lg mb-6 text-black">
-          Follow these simple steps to apply for the MBA program at ICEM College
+          Follow these simple steps to apply for the MBA Programme at IGSB,
           Pune:
         </p>
  
@@ -91,7 +91,7 @@ const AdmissionProcess = () => {
             >
               5
             </div>
-            <p className="text-lg">Confirm your seat and join ICEM College!</p>
+            <p className="text-lg">Confirm your seat and join IGSB!</p>
           </div>
         </div>
  

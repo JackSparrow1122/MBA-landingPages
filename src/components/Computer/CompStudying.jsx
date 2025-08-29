@@ -30,12 +30,10 @@ function CompStudying() {
     <div className="flex px-8 md:px-16 py-6 poppins-regular" style={{ background: '#FCFAEE' }}>
       {/* 70% Left Side */}
       <div className="w-[70%] pr-8" data-aos="fade-right" ref={leftRef}>
-        <h1 className="text-4xl font-semibold text-left mb-4">Studying with Indira College of</h1>
-  <h1 className="text-4xl font-extralight text-left text-[#F37021] mb-6">Engineering & Management</h1>
+        <h1 className="text-4xl font-semibold text-left mb-4">Studying with  </h1>
+  <h1 className="text-4xl font-extralight text-left text-[#F37021] mb-6">Indira Global School of Business</h1>
         <p className="text-left text-lg mb-6" data-aos="fade-up">
-          Indira College of Engineering & Management offers a robust academic environment, blending advanced
-          theoretical knowledge with practical applications. We provide our students with opportunities to excel
-          both in academics and in real-world industry settings.
+        At IGSB, learning goes beyond classrooms to build globally aware, industry-ready leaders. Our AICTE-approved MBA programmes blend academic rigor with real-world exposure, equipping students to handle dynamic markets with confidence and strategic insight. 
         </p>
  
         {/* 2x3 Grid for Cards */}
@@ -44,42 +42,42 @@ function CompStudying() {
           <div className="bg-[#F7F3EF] p-4 shadow-lg border-1 border-[#F37021] border-[#F37021] flex justify-between items-center rounded-lg" data-aos="zoom-in">
             <span className="flex items-center">
               <FaStar className="text-[#F37021] mr-4 text-4xl" />
-              <span className="text-sm">15+ YEARS OF ACADEMIC EXCELLENCE</span>
+              <span className="text-sm">30+ Years of Academic Excellence</span>
             </span>
           </div>
           {/* Card 2 */}
           <div className="bg-[#F7F3EF] p-4 shadow-lg border-1 border-[#F37021] flex justify-between items-center rounded-lg" data-aos="zoom-in">
             <span className="flex items-center">
               <FaUsers className="text-[#F37021] mr-4 text-4xl" />
-              <span className="text-sm">350+ LEADING RECRUITERS</span>
+              <span className="text-sm">350+ Leading Recruiters on Campus </span>
             </span>
           </div>
           {/* Card 3 */}
           <div className="bg-[#F7F3EF] p-4 shadow-lg border-1 border-[#F37021] flex justify-between items-center rounded-lg" data-aos="zoom-in">
             <span className="flex items-center">
               <FaBuilding className="text-[#F37021] mr-4 text-4xl" />
-              <span className="text-sm">INDIRA STUDENT DEVELOPMENT PROGRAM</span>
+              <span className="text-sm">State of the Art Infrastructure </span>
             </span>
           </div>
           {/* Card 4 */}
           <div className="bg-[#F7F3EF] p-4 shadow-lg border-1 border-[#F37021] flex justify-between items-center rounded-lg" data-aos="zoom-in">
             <span className="flex items-center">
               <FaLaptop className="text-[#F37021] mr-4 text-4xl" />
-              <span className="text-sm">42 LAKHS HIGHEST PACKAGE OFFERED</span>
+              <span className="text-sm">Career & Leadership Programme  </span>
             </span>
           </div>
           {/* Card 5 */}
           <div className="bg-[#F7F3EF] p-4 shadow-lg border-1 border-[#F37021] flex justify-between items-center rounded-lg" data-aos="zoom-in">
             <span className="flex items-center">
               <FaGraduationCap className="text-[#F37021] mr-4 text-4xl" />
-              <span className="text-sm">STATE OF THE ART INFRASTRUCTURE</span>
+              <span className="text-sm">13.8 LPA, Highest Package Offered </span>
             </span>
           </div>
           {/* Card 6 */}
           <div className="bg-[#F7F3EF] p-4 shadow-lg border-1 border-[#F37021] flex justify-between items-center rounded-lg" data-aos="zoom-in">
             <span className="flex items-center">
               <FaChartLine className="text-[#F37021] mr-4 text-4xl" /> {/* New Icon */}
-              <span className="text-sm">EXCEPTIONAL GROWTH OPPORTUNITIES</span> {/* New Text */}
+              <span className="text-sm">Practice Oriented Learning  </span> {/* New Text */}
             </span>
           </div>
         </div>

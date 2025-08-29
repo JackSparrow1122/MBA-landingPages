@@ -8,10 +8,11 @@ function CompHero() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
  
   const words = [
-    "Innovation",
-    "Evolution",
-    "Frontier",
-    "Revolution",
+    "Business ",
+    "Innovation ",
+    "Strategy ",
+    "Leadership ",
+    "Opportunity ",
   ];
  
   useEffect(() => {
@@ -70,18 +71,17 @@ function CompHero() {
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-full md:w-1/2">
         <h1 className="text-[60px] text-[#ffffff] font-semibold leading-tight mb-6">
-          Lead the Tech{" "}
-          <span className="relative inline-block">
+          Redefining {" "}
+          <span className="relative inline-block text-[#F37021]">
             {currentText}
             <span className="ml-1 animate-blink">|</span>
           </span>{" "}
-          with{" "}
-            <span className="text-[#F37021] font-bold mech-hero-wrapper">MBA</span>{" "}
-          at ICEM
+          {" "}
+            <span className="text-[#F37021] font-bold mech-hero-wrapper"></span>{" "}
+         for Your Future with <span className="text-[#F37021] ">MBA</span> at IGSB.
         </h1>
         <p className="mt-4 text-2xl">
-          Innovative programs, expert faculty, and endless opportunities for
-          growth await you.
+       Learn, innovate, and lead with an <span className=" text-[#F37021]">MBA</span> aligned to global standards and industry needs. 
         </p>
       </div>
  
@@ -161,12 +161,12 @@ function CompHero() {
             </div>
             <div>
               <select
-                id="program"
+                id="programme"
                 className="w-full p-1.5 bg-[#FCE8D5] text-black rounded border border-[#FCE8D5] focus:outline-none focus:ring-2 focus:ring-[#FCE8D5]"
                 required
               >
-                <option value="">Select Program</option>
-                {/* Add program options here */}
+                <option value="">Select programme</option>
+                {/* Add programme options here */}
               </select>
             </div>
             <div>

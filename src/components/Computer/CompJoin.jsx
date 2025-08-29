@@ -17,11 +17,10 @@ function CompJoin() {
       <div className="relative z-20 px-8 md:px-16 py-4">
         <div className="text-center mb-2">
           <h1 className="text-5xl font-bold text-white mb-6 mt-2">
-            Join the MBA Program at IGSB College Pune
+           Join MBA Programme at IGSB, Pune 
           </h1>
           <p className="text-xl text-gray-200 mb-8">
-            Empowering the next generation of tech leaders. Unlock your potential
-            with our world-class curriculum and experienced faculty.
+          Shaping visionary business leaders of tomorrow. Elevate your future with our dynamic curriculum, global exposure, and industry-driven expertise. 
           </p>
           <button className="bg-transparent border-2 text-[#ffffff] py-2 px-6 rounded-full text-xl hover:bg-blue-700 hover:text-white transition-all">
             Apply Now

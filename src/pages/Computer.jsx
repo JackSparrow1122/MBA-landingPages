@@ -22,7 +22,7 @@ function Computer() {
       <CompOfferings />
       <CompStudying />
       <CompBrochure />
-      <CompHighlights />
+      {/* <CompHighlights /> */}
       <CompJoin />
       <CompCarrer />
       <CompRecruiter />

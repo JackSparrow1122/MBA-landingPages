@@ -25,11 +25,11 @@ const MBACourses = () => {
             className="border rounded-lg shadow bg-[#F7F3EF] flex flex-col h-full hover:shadow-lg transition"
           >
             {/* Image on top */}
-            <div className="w-full flex items-center justify-center p-4">
+            <div className="w-full flex items-center justify-center ">
               <img
                 src={course.img}
                 alt={course.title}
-                className="w-full h-40 object-cover rounded-t-lg"
+                className="w-full h-40 object-cover object-top rounded-t-lg"
               />
             </div>
 
