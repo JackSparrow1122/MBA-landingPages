@@ -3,54 +3,36 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 // Importing images
-import logo1 from '../../assets/images/came/1.avif';
-import logo2 from '../../assets/images/came/2.avif';
-import logo3 from '../../assets/images/came/3.avif';
-import logo21 from '../../assets/images/came/21.avif';
-import logo22 from '../../assets/images/came/22.avif';
-import logo6 from '../../assets/images/came/24.avif';
-import logo7 from '../../assets/images/came/7.avif';
-import logo8 from '../../assets/images/came/8.avif';
-import logo9 from '../../assets/images/came/9.avif';
-import logo10 from '../../assets/images/came/10.avif';
-import logo11 from '../../assets/images/came/11.avif';
-import logo12 from '../../assets/images/came/12.avif';
-import logo13 from '../../assets/images/came/13.avif';
-import logo15 from '../../assets/images/came/15.avif';
-import logo19 from '../../assets/images/came/19.avif';
-import logo20 from '../../assets/images/came/20.avif';
-import logo25 from '../../assets/images/came/25.avif';
-import logo29 from '../../assets/images/came/29.avif';
-import logo32 from '../../assets/images/came/32.avif';
-import logo34 from '../../assets/images/came/34.avif';
-import logo37 from '../../assets/images/came/37.avif';
-import logo39 from '../../assets/images/came/39.avif';
-import logo40 from '../../assets/images/came/40.avif';
-import logo41 from '../../assets/images/came/41.avif';
-import logo42 from '../../assets/images/came/42.avif';
-import logo43 from '../../assets/images/came/43.avif';
-import logo44 from '../../assets/images/came/44.avif';
-import logo46 from '../../assets/images/came/46.avif';
-import logo47 from '../../assets/images/came/47.avif';
-import logo48 from '../../assets/images/came/48.avif';
-import logo50 from '../../assets/images/came/50.avif';
-import logo51 from '../../assets/images/came/51.avif';
+import logo1 from '../../assets/images/came/BAGIC.png';
+import logo2 from '../../assets/images/came/Bank-of-New-York-Mellon.png';
+import logo3 from '../../assets/images/came/Barclays.png';
+import logo4 from '../../assets/images/came/FINCART.png';
+import logo5 from '../../assets/images/came/Fin-destination.png';
+import logo6 from '../../assets/images/came/HDFC-Sales-Pvt-Ltd.png';
+import logo7 from '../../assets/images/came/Indigo-Paints.png';
+import logo8 from '../../assets/images/came/Juspay.png';
+import logo9 from '../../assets/images/came/Kohler.png';
+import logo10 from '../../assets/images/came/LandMark-Group.png';
+import logo11 from '../../assets/images/came/Master-Card.png';
+import logo12 from '../../assets/images/came/Mr-Kitchen.png';
+import logo13 from '../../assets/images/came/Nestle.png';
+import logo14 from '../../assets/images/came/Patterns-Technologies.png';
+import logo15 from '../../assets/images/came/Payatu.png';
+import logo16 from '../../assets/images/came/Real-Estate-Mall.png';
 
 
 const sponsorsData = [
   {
     title: 'PARTICIPATING DELEGATES',
     logos: [
-      logo1, logo2, logo3, logo21, logo22, logo6, logo7, logo8, logo9, 
-      logo10, logo11, logo12, logo13, logo15, logo19, logo20,
+      logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8,
     ],
   },
   {
     title: 'PARTICIPATING DELEGATES',
     logos: [
-      logo25, logo29, logo32, logo34, logo37, logo39, logo40, logo41, logo42, 
-      logo43, logo44, logo46, logo47, logo48, logo50, logo51,
-    ],
+      logo9, logo10, logo11, logo12, logo13, logo14, logo15, logo16
+    ]
   },
 ];
 

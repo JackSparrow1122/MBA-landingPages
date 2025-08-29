@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FaStar, FaBuilding, FaUsers, FaLaptop, FaGraduationCap, FaChartLine } from 'react-icons/fa'; // Added FaChartLine for the new card icon
-import MyImage from '../../assets/images/mbastudying.jpg'; // Import your PNG image
+import MyImage from '../../assets/images/studying.jpg'; // Import your PNG image
 import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import AOS styles
  
