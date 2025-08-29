@@ -25,7 +25,7 @@ function App() {
 
 // Component to handle dynamic title
 function PageWithDynamicTitle({ title }) {
-  const dynamicTitle = `ICEM | ${title}`;
+  const dynamicTitle = `IGSB | ${title}`;
 
   return (
     <>

@@ -9,21 +9,21 @@ import {
 import Testimonials from "./CompTestimonials"; // Import Testimonials component
 import CompApply from "./CompApply"; // Import the CompApply component
 
-function ICEMLandingPage() {
+function IGSBLandingPage() {
   return (
-    <div className="bg-[#F6FBFF] py-16  relative poppins-regular">
+    <div className="bg-[#FCFAEE] py-16  relative poppins-regular">
       <div className="px-8 md:px-16">
 
 
       {/* Program Highlights */}
       <div className="text-center mb-20">
-        <h2 className="text-4xl font-semibold text-[#6095ff] mb-8">
-          Why Choose MBA at ICEM College?
+        <h2 className="text-4xl font-semibold  mb-8">
+          Why Choose <span className="text-[#F37021]">MBA</span> at <span className="text-[#F37021]">IGSB</span> College?
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Card 1 */}
-          <div className="bg-white p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
-            <div className="w-16 h-16 bg-[#ff6f61] text-white rounded-full flex items-center justify-center mb-6">
+          <div className="bg-[#F7F3EF] p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
+            <div className="w-16 h-16 bg-[#F37021] text-white rounded-full flex items-center justify-center mb-6">
               <FontAwesomeIcon icon={faGraduationCap} className="text-2xl" />
             </div>
             <h3 className="text-xl font-semibold text-[#000000] mb-4">
@@ -37,8 +37,8 @@ function ICEMLandingPage() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
-            <div className="w-16 h-16 bg-[#ffbd59] text-white rounded-full flex items-center justify-center mb-6">
+          <div className="bg-[#F7F3EF] p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
+            <div className="w-16 h-16 bg-[#F37021] text-white rounded-full flex items-center justify-center mb-6">
               <FontAwesomeIcon icon={faUserGraduate} className="text-2xl" />
             </div>
             <h3 className="text-xl font-semibold text-[#000000] mb-4">
@@ -51,23 +51,23 @@ function ICEMLandingPage() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
-            <div className="w-16 h-16 bg-[#4caf50] text-white rounded-full flex items-center justify-center mb-6">
+          <div className="bg-[#F7F3EF] p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
+            <div className="w-16 h-16 bg-[#F37021] text-white rounded-full flex items-center justify-center mb-6">
               <FontAwesomeIcon icon={faTrophy} className="text-2xl" />
             </div>
             <h3 className="text-xl font-semibold text-[#000000] mb-4">
               Excellence in Innovation
             </h3>
             <p className="text-gray-600 text-center">
-              ICEM is ranked among the top institutes for innovation in
+              IGSB is ranked among the top institutes for innovation in
               engineering. Our students regularly participate in national and
               international tech competitions.
             </p>
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
-            <div className="w-16 h-16 bg-[#2196f3] text-white rounded-full flex items-center justify-center mb-6">
+          <div className="bg-[#F7F3EF] p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
+            <div className="w-16 h-16 bg-[#F37021] text-white rounded-full flex items-center justify-center mb-6">
               <FontAwesomeIcon icon={faRocket} className="text-2xl" />
             </div>
             <h3 className="text-xl font-semibold text-[#000000] mb-4">
@@ -92,4 +92,4 @@ function ICEMLandingPage() {
   );
 }
 
-export default ICEMLandingPage;
+export default IGSBLandingPage;

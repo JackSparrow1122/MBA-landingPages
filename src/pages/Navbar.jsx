@@ -1,8 +1,7 @@
 import React from 'react';
 
 // Import images
-import logo from '../../src/assets/images/ICEM-logo.png';
-import autonomousLogo from '../../src/assets/images/ICEM-Autonomous-logo.png';
+import logo from '../assets/images/IGSB.png';
 
 function Navbar() {
   return (
@@ -16,12 +15,7 @@ function Navbar() {
           </a>
         </div>
 
-        {/* Right Logo */}
-        <div className="p-2">
-          <a href="/">
-            <img src={autonomousLogo} alt="Autonomous Logo" className="h-auto max-w-xs md:max-w-28" />
-          </a>
-        </div>
+       
       </div>
     </nav>
   );

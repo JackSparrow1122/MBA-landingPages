@@ -1,98 +1,20 @@
-import React from "react";
 import Slider from "react-slick"; // Importing react-slick
-import rahulImage from "../../assets/images/user.png";
-import priyaImage from "../../assets/images/user.png";
-import ravi1Image from "../../assets/images/user.png";
-import nehaImage from "../../assets/images/user.png";
-import ravi2Image from "../../assets/images/user.png";
-import aishaImage from "../../assets/images/user.png";
+import { FaUserCircle } from "react-icons/fa";
 import newImage from "../../assets/images/testimony.webp"; // New Image for the right section
 
 function Testimonials() {
   const testimonials = [
     {
-      name: "Rahul Sharma - Junior Developer",
-      department: "Computer Science",
-      year: "Batch-24",
-      text: '"ICEM provided me with the skills and knowledge I needed to succeed in the tech world. The faculty and resources are top-notch!"',
-      image: rahulImage,
+      name: "Ritu Tripathi -  Tax Consultant",
+      department: "Organization : Deloitte",
+      text: '"My experience at Indira Global School of Business has meant career advancement to a highly responsible and challenging position in the corporate world. Along with that goes an increased sense of self-esteem and a feeling of accomplishment and personal satisfaction. The energy and enthusiasm driven by our Professors bought nothing but the best out of us. I didn’t spend time studying rather I spent it learning, growing and having fun. All this and beyond, to the best Alma Mater I’ve ever had."',
+      image: null,
     },
     {
-      name: "Priya Deshmukh - Software Engineer Trainee",
-      department: "Computer Science",
-      year: "Batch-23",
-      text: '"The exposure to real-world projects and internships helped me land a job at a leading tech firm straight out of college! The curriculum is well-structured."',
-      image: priyaImage,
-    },
-    {
-      name: "Ravi Mehta - Junior Software Engineer",
-      department: "Computer Science",
-      year: "Batch-25",
-      text: '"ICEM is a fantastic place to study, with the best infrastructure and an extremely supportive environment! From well-equipped labs to knowledgeable professors."',
-      image: ravi1Image,
-    },
-    {
-      name: "Neha Joshi - Software Developer Intern",
-      department: "Computer Science",
-      year: "Batch-24",
-      text: '"The practical experience I gained at ICEM really helped me adapt quickly in the tech industry! The focus on real-world applications and exposure to emerging technologies was invaluable."',
-      image: nehaImage,
-    },
-    {
-      name: "Ravi Kumar - Front-End Developer Intern",
-      department: "Computer Science",
-      year: "Batch-24",
-      text: '"I had access to top-tier resources and mentorship, making my learning journey smooth and enriching! ICEM\'s environment encouraged creativity and collaboration."',
-      image: ravi2Image,
-    },
-    {
-      name: "Aisha Ali - Junior Web Developer",
-      department: "Computer Science",
-      year: "Batch-25",
-      text: '"The real-world challenges and hands-on projects at ICEM were the highlight of my college life! The faculty ensures that we are always up-to-date with the latest industry trends."',
-      image: aishaImage,
-    },
-    {
-      name: "Rahul Sharma - Junior Developer",
-      department: "Computer Science",
-      year: "Batch-24",
-      text: '"ICEM provided me with the skills and knowledge I needed to succeed in the tech world. The faculty and resources are top-notch!"',
-      image: rahulImage,
-    },
-    {
-      name: "Priya Deshmukh - Software Engineer Trainee",
-      department: "Computer Science",
-      year: "Batch-23",
-      text: '"The exposure to real-world projects and internships helped me land a job at a leading tech firm straight out of college! The curriculum is well-structured."',
-      image: priyaImage,
-    },
-    {
-      name: "Ravi Mehta - Junior Software Engineer",
-      department: "Computer Science",
-      year: "Batch-25",
-      text: '"ICEM is a fantastic place to study, with the best infrastructure and an extremely supportive environment! From well-equipped labs to knowledgeable professors."',
-      image: ravi1Image,
-    },
-    {
-      name: "Neha Joshi - Software Developer Intern",
-      department: "Computer Science",
-      year: "Batch-24",
-      text: '"The practical experience I gained at ICEM really helped me adapt quickly in the tech industry! The focus on real-world applications and exposure to emerging technologies was invaluable."',
-      image: nehaImage,
-    },
-    {
-      name: "Ravi Kumar - Front-End Developer Intern",
-      department: "Computer Science",
-      year: "Batch-24",
-      text: '"I had access to top-tier resources and mentorship, making my learning journey smooth and enriching! ICEM\'s environment encouraged creativity and collaboration."',
-      image: ravi2Image,
-    },
-    {
-      name: "Natasha kapoor - Junior Web Developer",
-      department: "Computer Science",
-      year: "Batch-25",
-      text: '"The real-world challenges and hands-on projects at ICEM were the highlight of my college life! The faculty ensures that we are always up-to-date with the latest industry trends."',
-      image: aishaImage,
+      name: "Akshay Shirke- Customer Service Manager",
+      department: "Organization : Amazon",
+      text: '"I have always felt that I was so lucky to be a student at IGSB. The thing I admire the most about IGSB is the support I received from everyone at the campus. I wouldn’t have been able to achieve what I have achieved without that caring environment. The friendly atmosphere here and the fact the teachers are really close to the students makes it unique. Here, I not only developed my academic skills but also got a global exposure in every field be it my specialization or other curricular activities. It has imparted a perfect blend of technical and soft skills and made me ready for industry."',
+      image: null,
     },
   ];
 
@@ -135,14 +57,14 @@ function Testimonials() {
   }
 
   return (
-    <div className="mb-4 px-8 md:px-16">
+    <div className="mb-4 px-8 md:px-16 py-10 bg-[#FCFAEE] relative overflow-hidden">
       {/* Main Heading outside the white rectangle */}
-      <h2 className="text-4xl font-semibold text-[#6095ff] text-center mb-8">
-        What Our Students Say
+      <h2 className="text-4xl font-semibold  text-center mb-8">
+        What Our <span className="text-[#F37021]">Students</span> Say
       </h2>
 
-      {/* Single white rectangle container */}
-      <div className="bg-white shadow-lg">
+      {/* Single glassmorphism rectangle container */}
+      <div className="bg-white/70 backdrop-blur-md border-1 border-[#ffd6b3] rounded-2xl">
         <div className="flex justify-between items-center gap-4">
           {/* Testimonial Section - 60% */}
           <div className="w-3/5">
@@ -151,13 +73,11 @@ function Testimonials() {
               {pairedTestimonials.map((pair, index) => (
                 <div key={index} className="flex flex-col">
                   {/* First Card: Profile and Testimonial */}
-                  <div className="p-6 flex flex-col mb-6 min-h-[200px]"> {/* Adjusted min-height */}
+                  <div className="p-6 flex flex-col mb-6 min-h-[200px]">
+                    {" "}
+                    {/* Adjusted min-height */}
                     <div className="flex items-center mb-4">
-                      <img
-                        src={pair[0].image}
-                        alt={pair[0].name}
-                        className="w-16 h-16 rounded-full mr-4"
-                      />
+                      <FaUserCircle className="w-12 h-12 text-[#F37021] mr-4" />
                       <div className="text-left">
                         <p className="text-lg font-semibold text-[#000000]">
                           {pair[0].name}
@@ -173,13 +93,11 @@ function Testimonials() {
 
                   {/* Second Card (for the next testimonial) */}
                   {pair[1] && (
-                    <div className="p-6 flex flex-col mb-6 min-h-[200px]"> {/* Adjusted min-height */}
+                    <div className="p-6 flex flex-col mb-6 min-h-[200px]">
+                      {" "}
+                      {/* Adjusted min-height */}
                       <div className="flex items-center mb-4">
-                        <img
-                          src={pair[1].image}
-                          alt={pair[1].name}
-                          className="w-16 h-16 rounded-full mr-4"
-                        />
+                        <FaUserCircle className="w-12 h-12 text-[#F37021] mr-4" />
                         <div className="text-left">
                           <p className="text-lg font-semibold text-[#000000]">
                             {pair[1].name}

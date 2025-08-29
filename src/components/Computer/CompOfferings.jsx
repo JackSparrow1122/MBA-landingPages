@@ -1,4 +1,4 @@
-import { FaGraduationCap, FaBuilding, FaBookOpen, FaLaptop, FaLanguage, FaUniversity, FaBriefcase, FaChalkboardTeacher, FaDesktop } from 'react-icons/fa';
+import { FaGraduationCap,  FaLanguage, FaUniversity, FaBriefcase, FaChalkboardTeacher, FaDesktop } from 'react-icons/fa';
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import AOS from 'aos';  // Import AOS
@@ -33,70 +33,70 @@ function CompOfferings() {
   }, []);
 
   return (
-    <div className="px-8 md:px-16 py-6 md:py-8 bg-[#ffffff] poppins-regular">
+    <div className="px-8 md:px-16 py-6 md:py-8 bg-[#FCFAEE] poppins-regular">
       <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#000]" data-aos="fade-up">
-        Top Offerings
+        <span className='text-[#F37021]'>Top</span> Offerings
       </h2>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4 md:gap-x-20">
         {/* Excellent Academic Interface */}
         <div
-          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
+          className="bg-[#F7F3EF] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
           data-aos="fade-up"
         >
-          <FaGraduationCap size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Excellent Academic Interface</p>
-          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-blue-600 rounded-full shadow-2xl"></div>
+          <FaGraduationCap size={50} className="text-[#F37021] mb-4 icon" />
+          <p className="text-lg font-semibold">Excellent Academic Interface</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-[#F37021] rounded-full shadow-2xl"></div>
         </div>
 
         {/* Quality Holistic Infrastructure */}
         <div
-          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
+          className="bg-[#F7F3EF] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
           data-aos="fade-up"
         >
-          <FaUniversity size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Quality Holistic Infrastructure</p>
-          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-blue-600 rounded-full shadow-2xl"></div>
+          <FaUniversity size={50} className="text-[#F37021] mb-4 icon" />
+          <p className="text-lg font-semibold bg-[#F7F3EF]">Quality Holistic Infrastructure</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-[#F37021] rounded-full shadow-2xl"></div>
         </div>
 
         {/* Customized MPSC/MPSC-ES/UPSC Training Program */}
         <div
-          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
+          className="bg-[#F7F3EF] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
           data-aos="fade-up"
         >
-          <FaChalkboardTeacher size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Customized MPSC/MPSC-ES /UPSC Training Program</p>
-          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-blue-600 rounded-full shadow-2xl"></div>
+          <FaChalkboardTeacher size={50} className="text-[#F37021] mb-4 icon" />
+          <p className="text-lg font-semibold bg-[#F7F3EF]">Customized MPSC/MPSC-ES /UPSC Training Program</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-[#F37021] rounded-full shadow-2xl"></div>
         </div>
 
         {/* Guaranteed Core Placements for Core Branches */}
         <div
-          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
+          className="bg-[#F7F3EF] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
           data-aos="fade-up"
         >
-          <FaBriefcase size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Guaranteed Core Placements for Core Branches</p>
-          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-blue-600 rounded-full shadow-2xl"></div>
+          <FaBriefcase size={50} className="text-[#F37021] mb-4 icon" />
+          <p className="text-lg font-semibold bg-[#F7F3EF]">Guaranteed Core Placements for Core Branches</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-[#F37021] rounded-full shadow-2xl"></div>
         </div>
 
         {/* Product Companies for Campus Placements */}
         <div
-          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
+          className="bg-[#F7F3EF] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
           data-aos="fade-up"
         >
-          <FaDesktop size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Product Companies for Campus Placements</p>
-          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-blue-600 rounded-full shadow-2xl"></div>
+          <FaDesktop size={50} className="text-[#F37021] mb-4 icon" />
+          <p className="text-lg font-semibold bg-[#F7F3EF]">Product Companies for Campus Placements</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-[#F37021] rounded-full shadow-2xl"></div>
         </div>
 
         {/* Foreign Languages (German, Japanese, French) */}
         <div
-          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
+          className="bg-[#F7F3EF] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
           data-aos="fade-up"
         >
-          <FaLanguage size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Foreign Languages (German, Japanese, French)</p>
-          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-blue-600 rounded-full shadow-2xl"></div>
+          <FaLanguage size={50} className="text-[#F37021] mb-4 icon" />
+          <p className="text-lg font-semibold bg-[#F7F3EF]">Foreign Languages (German, Japanese, French)</p>
+          <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-[#F37021] rounded-full shadow-2xl"></div>
         </div>
       </div>
     </div>

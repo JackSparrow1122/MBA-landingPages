@@ -18,15 +18,15 @@ function ProgramOverview() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0 md:space-x-8 px-8 md:px-16 py-3 md:py-6 poppins-regular">
+    <div className="flex bg-[#F7F3EF] flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0 md:space-x-8 px-8 md:px-16 py-3 md:py-6 poppins-regular">
       {/* Left Part: Heading and Paragraph */}
       <div className="flex-1" data-aos="fade-right">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4 relative">
+        <h2 className="text-3xl font-bold text-[#F37021] mb-4 relative">
           {/* Floating Hat Above the "P" */}
           <img
             src={HatImage}
             alt="Hat"
-            className="absolute left-[-25px] top-[-38px] w-16 h-16 animate-floating" // Apply floating animation class
+            className="absolute left-[-25px] top-[-38px] w-16 h-16 animate-floating " // Apply floating animation class
           />
           Program Overview
         </h2>
@@ -36,7 +36,7 @@ function ProgramOverview() {
       </div>
 
       {/* Right Part: Image */}
-      <div className="flex-1 bg-white" data-aos="fade-left">  {/* Make container transparent */}
+      <div className="flex-1 bg-[#F7F3EF]" data-aos="fade-left">  {/* Make container transparent */}
         <img
           src={ProgramImage} // Use the imported image
           alt="Program"
