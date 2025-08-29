@@ -26,7 +26,7 @@ function Computer() {
       <CompJoin />
       <CompCarrer />
       <CompRecruiter />
-      <AutoChatbot />
+      {/* <AutoChatbot /> */}
     </div>
   );
 }
