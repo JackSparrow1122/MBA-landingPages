@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import logo from "../assets/images/Icem-footer-logo.png";
+import logo from "../assets/images/logo.png";
 import blogImage1 from "../assets/images/blog1.png";
 import blogImage2 from "../assets/images/blog2.png";
 
@@ -98,69 +98,34 @@ function Footer() {
             {/* Grid layout for links */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="space-y-8">
-                <a href="#" className="block text-gray-500 hover:text-gray-400">
-                  Staff Grievance Form
+                <a href="https://indiraigsb.edu.in/" className="block text-gray-500 hover:text-gray-400">
+                  Home
                 </a>
-                <a href="#" className="block text-gray-500 hover:text-gray-400">
-                  Women Welfare Policy
+                <a href="https://indiraigsb.edu.in/shree-chanakya-education-society" className="block text-gray-500 hover:text-gray-400">
+                  About Us
                 </a>
-                <a href="#" className="block text-gray-500 hover:text-gray-400">
-                  Anti Ragging Policy
+                <a href="https://indiraigsb.edu.in/MBA-admission-and-course-details" className="block text-gray-500 hover:text-gray-400">
+                  MBA Admission
                 </a>
-                <a href="#" className="block text-gray-500 hover:text-gray-400">
-                  Faculty Application Form
+                <a href="https://indiraigsb.edu.in/alumni" className="block text-gray-500 hover:text-gray-400">
+                  Alumni
                 </a>
-                <a href="#" className="block text-gray-500 hover:text-gray-400">
-                  SPPU
-                </a>
+               
               </div>
               <div className="space-y-8">
-                <a href="#" className="block text-gray-500 hover:text-gray-400">
-                  AICTE
+                 <a href="https://indiraigsb.edu.in/contact-us" className="block text-gray-500 hover:text-gray-400">
+                  Contact Us
                 </a>
-                <a href="#" className="block text-gray-500 hover:text-gray-400">
-                  DTE
+                <a href="https://indiraigsb.edu.in/privacy-policy" className="block text-gray-500 hover:text-gray-400">
+                  Privacy Policy
                 </a>
-                <a href="#" className="block text-gray-500 hover:text-gray-400">
-                  MahaDBT
+                <a href="https://indiraigsb.edu.in/student-achievements" className="block text-gray-500 hover:text-gray-400">
+                  Student Achievements
                 </a>
-                <a href="#" className="block text-gray-500 hover:text-gray-400">
-                  MANDATORY DISCLOSURE
+                <a href="https://indiraigsb.edu.in/student-life-at-IGBS" className="block text-gray-500 hover:text-gray-400">
+                  Student Life at IGSB
                 </a>
-                <a href="#" className="block text-gray-500 hover:text-gray-400">
-                  AICTE APPROVAL
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column */}
-          <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-[#023b5e]">Popular Posts</h3>
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <img
-                  src={blogImage1}
-                  alt="Investment Opportunities for Women Blog Image"
-                  className="w-36 h-24 object-contain rounded-lg"
-                />
-                <div>
-                  <h4 className="font-semibold text-lg">
-                    Investment Opportunities for Women in India
-                  </h4>
-                  <p className="text-sm text-gray-400">March 13, 2024</p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-4">
-                <img
-                  src={blogImage2}
-                  alt="Blog Post 2"
-                  className="w-36 h-24 object-contain rounded-lg"
-                />
-                <div>
-                  <h4 className="font-semibold text-lg">Blog Post 2</h4>
-                  <p className="text-sm text-gray-400">March 13, 2024</p>
-                </div>
+                
               </div>
             </div>
           </div>

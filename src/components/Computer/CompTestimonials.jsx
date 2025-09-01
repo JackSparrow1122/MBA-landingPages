@@ -1,6 +1,6 @@
-import Slider from "react-slick"; // Importing react-slick
+import Slider from "react-slick"; 
 import { FaUserCircle } from "react-icons/fa";
-import newImage from "../../assets/images/testimony.webp"; // New Image for the right section
+import newImage from "../../assets/images/testimony.webp"; 
 
 function Testimonials() {
   const testimonials = [
@@ -19,17 +19,17 @@ function Testimonials() {
   ];
 
   const settings = {
-    dots: true, // Navigation dots
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1, // Show 1 slide at a time (to ensure each slide holds 2 items)
+    slidesToShow: 1,
     slidesToScroll: 1,
-    vertical: true, // Enable vertical scrolling
-    centerMode: true, // Center the active slide
-    centerPadding: "0", // No padding around centered slide
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Set autoplay speed (3 seconds here)
-    pauseOnHover: false, // Disable stopping on hover
+    vertical: true,
+    centerMode: true,
+    centerPadding: "0",
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -50,65 +50,59 @@ function Testimonials() {
     ],
   };
 
-  // Function to pair testimonials for each slide
   const pairedTestimonials = [];
   for (let i = 0; i < testimonials.length; i += 2) {
     pairedTestimonials.push([testimonials[i], testimonials[i + 1]]);
   }
 
   return (
-    <div className="mb-4 px-8 md:px-16 py-10 bg-[#FCFAEE] relative overflow-hidden">
-      {/* Main Heading outside the white rectangle */}
-      <h2 className="text-4xl font-semibold  text-center mb-8">
-       Students Testimonials
+    <div className="mb-4 px-4 md:px-16 py-10 bg-[#FCFAEE] relative overflow-hidden">
+      <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8">
+        Students Testimonials
       </h2>
 
-      {/* Single glassmorphism rectangle container */}
-      <div className="bg-white/70 backdrop-blur-md border-1 border-[#ffd6b3] rounded-2xl">
-        <div className="flex justify-between items-center gap-4">
-          {/* Testimonial Section - 60% */}
-          <div className="w-3/5">
-            {/* Slick Slider */}
+      <div className="bg-white/70 backdrop-blur-md border border-[#ffd6b3] rounded-2xl p-4 md:p-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+          
+          {/* Testimonial Section */}
+          <div className="w-full md:w-3/5">
             <Slider {...settings}>
               {pairedTestimonials.map((pair, index) => (
                 <div key={index} className="flex flex-col">
-                  {/* First Card: Profile and Testimonial */}
-                  <div className="p-6 flex flex-col mb-6 min-h-[200px]">
-                    {" "}
-                    {/* Adjusted min-height */}
+                  
+                  {/* First Card */}
+                  <div className="p-4 md:p-6 flex flex-col mb-6 min-h-[200px]">
                     <div className="flex items-center mb-4">
-                      <FaUserCircle className="w-12 h-12 text-[#F37021] mr-4" />
+                      <FaUserCircle className="w-10 h-10 md:w-12 md:h-12 text-[#F37021] mr-4" />
                       <div className="text-left">
-                        <p className="text-lg font-semibold text-[#000000]">
+                        <p className="text-base md:text-lg font-semibold text-black">
                           {pair[0].name}
                         </p>
                         <hr className="my-1 border-t border-gray-300" />
-                        <p className="text-sm text-gray-500">
-                          {pair[0].department} | {pair[0].year}
+                        <p className="text-xs md:text-sm text-gray-500">
+                          {pair[0].department}
                         </p>
                       </div>
                     </div>
-                    <p className="text-gray-600">{pair[0].text}</p>
+                    <p className="text-gray-600 text-sm md:text-base">{pair[0].text}</p>
                   </div>
 
-                  {/* Second Card (for the next testimonial) */}
+                  {/* Second Card */}
                   {pair[1] && (
-                    <div className="p-6 flex flex-col mb-6 min-h-[200px]">
-                      {" "}
-                      {/* Adjusted min-height */}
+                    <div className="p-4 md:p-6 flex flex-col mb-6 min-h-[200px]">
                       <div className="flex items-center mb-4">
-                        <FaUserCircle className="w-12 h-12 text-[#F37021] mr-4" />
+                        <FaUserCircle className="w-10 h-10 md:w-12 md:h-12 text-[#F37021] mr-4" />
                         <div className="text-left">
-                          <p className="text-lg font-semibold text-[#000000]">
+                          <p className="text-base md:text-lg font-semibold text-black">
                             {pair[1].name}
                           </p>
                           <hr className="my-1 border-t border-gray-300" />
-                          <p className="text-sm text-gray-500">
-                            {pair[1].department} | {pair[1].year}
+                          <p className="text-xs md:text-sm text-gray-500">
+                            {pair[1].department}
                           </p>
                         </div>
                       </div>
-                      <p className="text-gray-600">{pair[1].text}</p>
+                      <p className="text-gray-600 text-sm md:text-base">{pair[1].text}</p>
                     </div>
                   )}
                 </div>
@@ -116,12 +110,12 @@ function Testimonials() {
             </Slider>
           </div>
 
-          {/* New Section - 40% with Image */}
-          <div className="w-2/5">
+          {/* Image Section (hidden on mobile) */}
+          <div className="hidden md:block w-2/5">
             <img
               src={newImage}
-              alt="New Image"
-              className="w-full h-full object-cover shadow-lg transform scale-x-[-1]"
+              alt="Testimonial"
+              className="w-full h-full object-cover shadow-lg transform scale-x-[-1] rounded-lg"
             />
           </div>
         </div>

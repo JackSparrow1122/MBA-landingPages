@@ -21,8 +21,10 @@ function CompHero() {
     const handleTyping = () => {
       const currentWord = words[currentWordIndex];
 
+
       if (!isDeleting) {
         if (currentText === currentWord) {
+          setTimeout(() => setIsDeleting(true), 1000);
           setTimeout(() => setIsDeleting(true), 1000);
           return;
         }
@@ -36,6 +38,8 @@ function CompHero() {
         setCurrentText(currentWord.substring(0, currentText.length - 1));
       }
     };
+
+    const timeout = setTimeout(handleTyping, isDeleting ? 80 : 120);
 
     const timeout = setTimeout(handleTyping, isDeleting ? 80 : 120);
     return () => clearTimeout(timeout);
@@ -91,4 +95,6 @@ function CompHero() {
   );
 }
 
+
 export default CompHero;
+
