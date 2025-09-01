@@ -10,11 +10,11 @@ import ApplyNowButton from './components/ApplyNowButton';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/mba-admission-2025">
       <div className="relative">
         <Navbar />
         <Routes>
-          <Route path="/igsb" element={<PageWithDynamicTitle title="igsb" />} />
+          <Route path="/" element={<PageWithDynamicTitle title="igsb" />} />
         </Routes>
         <Footer />
         <ApplyNowButton />
