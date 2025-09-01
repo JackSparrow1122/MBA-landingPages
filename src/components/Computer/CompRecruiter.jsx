@@ -24,18 +24,17 @@ import logo18 from '../../assets/images/came/Patterns-Technologies.png';
 import logo19 from '../../assets/images/came/Payatu.png';
 import logo20 from '../../assets/images/came/Real-Estate-Mall.png';
 
-
 const sponsorsData = [
   {
     title: 'PARTICIPATING DELEGATES',
     logos: [
-      logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8,logo9, logo10,
+      logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10,
     ],
   },
   {
     title: 'PARTICIPATING DELEGATES',
     logos: [
-       logo11, logo12, logo13, logo14, logo15, logo16,logo17, logo18,logo19, logo20,
+      logo11, logo12, logo13, logo14, logo15, logo16, logo17, logo18, logo19, logo20,
     ]
   },
 ];
@@ -61,9 +60,9 @@ const App = () => {
       <Slider {...settings} className="w-full">
         {sponsorsData.map((slide, index) => (
           <div key={index} className="flex flex-col items-center">
-            <div className="flex flex-row justify-center items-center w-full px-4">
+            <div className="flex flex-row justify-center items-center w-full px-2">
               <div
-                className="grid grid-cols-5 md:grid-cols-8 gap-4 justify-items-center w-full px-6"
+                className="grid grid-cols-5 gap-x-1 gap-y-4 justify-items-center w-full px-2"
                 style={{ gridTemplateRows: 'repeat(2, auto)' }} // Enforcing only two rows
               >
                 {slide.logos.map((logo, idx) => (
@@ -71,7 +70,7 @@ const App = () => {
                     <img
                       src={logo}
                       alt={`Logo ${idx + 1}`}
-                      className="rounded-none shadow-none w-auto h-auto object-contain" // Logos will scale dynamically without any background styling
+                      className="w-36 h-20 object-contain" // Further increased width and height
                     />
                   </div>
                 ))}

@@ -50,11 +50,6 @@ function Testimonials() {
     ],
   };
 
-  const pairedTestimonials = [];
-  for (let i = 0; i < testimonials.length; i += 2) {
-    pairedTestimonials.push([testimonials[i], testimonials[i + 1]]);
-  }
-
   return (
     <div className="mb-4 px-4 md:px-16 py-10 bg-[#FCFAEE] relative overflow-hidden">
       <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8">
@@ -67,44 +62,21 @@ function Testimonials() {
           {/* Testimonial Section */}
           <div className="w-full md:w-3/5">
             <Slider {...settings}>
-              {pairedTestimonials.map((pair, index) => (
-                <div key={index} className="flex flex-col">
-                  
-                  {/* First Card */}
-                  <div className="p-4 md:p-6 flex flex-col mb-6 min-h-[200px]">
-                    <div className="flex items-center mb-4">
-                      <FaUserCircle className="w-10 h-10 md:w-12 md:h-12 text-[#F37021] mr-4" />
-                      <div className="text-left">
-                        <p className="text-base md:text-lg font-semibold text-black">
-                          {pair[0].name}
-                        </p>
-                        <hr className="my-1 border-t border-gray-300" />
-                        <p className="text-xs md:text-sm text-gray-500">
-                          {pair[0].department}
-                        </p>
-                      </div>
+              {testimonials.map((testimonial, index) => (
+                <div key={index} className="p-4 md:p-6 flex flex-col min-h-[200px]">
+                  <div className="flex items-center mb-4">
+                    <FaUserCircle className="w-10 h-10 md:w-12 md:h-12 text-[#F37021] mr-4" />
+                    <div className="text-left">
+                      <p className="text-base md:text-lg font-semibold text-black">
+                        {testimonial.name}
+                      </p>
+                      <hr className="my-1 border-t border-gray-300" />
+                      <p className="text-xs md:text-sm text-gray-500">
+                        {testimonial.department}
+                      </p>
                     </div>
-                    <p className="text-gray-600 text-sm md:text-base">{pair[0].text}</p>
                   </div>
-
-                  {/* Second Card */}
-                  {pair[1] && (
-                    <div className="p-4 md:p-6 flex flex-col mb-6 min-h-[200px]">
-                      <div className="flex items-center mb-4">
-                        <FaUserCircle className="w-10 h-10 md:w-12 md:h-12 text-[#F37021] mr-4" />
-                        <div className="text-left">
-                          <p className="text-base md:text-lg font-semibold text-black">
-                            {pair[1].name}
-                          </p>
-                          <hr className="my-1 border-t border-gray-300" />
-                          <p className="text-xs md:text-sm text-gray-500">
-                            {pair[1].department}
-                          </p>
-                        </div>
-                      </div>
-                      <p className="text-gray-600 text-sm md:text-base">{pair[1].text}</p>
-                    </div>
-                  )}
+                  <p className="text-gray-600 text-sm md:text-base">{testimonial.text}</p>
                 </div>
               ))}
             </Slider>

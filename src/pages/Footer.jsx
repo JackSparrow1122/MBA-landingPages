@@ -1,9 +1,24 @@
-import React, { useEffect } from "react";
-import logo from "../assets/images/logo.png";
-import blogImage1 from "../assets/images/blog1.png";
-import blogImage2 from "../assets/images/blog2.png";
+import { useEffect, useState } from "react";
+import logo from "../assets/images/Icem-footer-logo.png";
 
 function Footer() {
+  const [showToast, setShowToast] = useState(false);
+  const [toastMessage, setToastMessage] = useState('');
+
+  const handleLinkClick = () => {
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    // Show toast
+    setToastMessage('Please fill in the application form details at the top of the page.');
+    setShowToast(true);
+    
+    // Hide toast after 5 seconds
+    setTimeout(() => {
+      setShowToast(false);
+    }, 5000);
+  };
+
   useEffect(() => {
     // Dynamically inject Font Awesome CDN
     const link = document.createElement("link");
@@ -41,50 +56,51 @@ function Footer() {
                   </div>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <i className="fas fa-phone-alt text-xl hover:text-green-500"></i>
+                  <i className="fas fa-phone-alt text-xl hover:text-gray-700"></i>
                   <div>
-                    <p>02114 – 661500 / 666</p>
+                    <a href="tel:02114691417" className="hover:text-gray-800">02114691417</a>
                   </div>
                 </div>
                 <div className="flex items-center space-x-2">
                   <i className="fas fa-envelope text-xl hover:text-gray-500"></i>
                   <div>
-                    <p>info@indiraicem.ac.in</p>
+                    <a href="mailto:mba.admissions@indiraigsb.edu.in" className="hover:text-gray-600">mba.admissions@indiraigsb.edu.in</a>
                   </div>
                 </div>
                 <div className="flex space-x-4 text-xl mb-4">
                   <a
-                    href="https://facebook.com"
+                    href="https://www.facebook.com/igsbpune"
                     aria-label="Facebook"
                     className="hover:text-blue-600"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <i className="fab fa-facebook-f"></i>
                   </a>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/indira.igsb/"
                     aria-label="Instagram"
                     className="hover:text-pink-600"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <i className="fab fa-instagram"></i>
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://in.linkedin.com/company/indira-global-school-of-business"
                     aria-label="LinkedIn"
                     className="hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <i className="fab fa-linkedin-in"></i>
                   </a>
                   <a
-                    href="https://twitter.com"
-                    aria-label="Twitter"
-                    className="hover:text-blue-400"
-                  >
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a
-                    href="https://youtube.com"
+                    href="https://www.youtube.com/user/indiracollege"
                     aria-label="YouTube"
                     className="hover:text-red-600"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <i className="fab fa-youtube"></i>
                   </a>
@@ -136,6 +152,13 @@ function Footer() {
       <div className="bg-[#023b5e] py-4 px-8 md:px-16 text-left text-white text-sm mt-auto">
         <p>© 2024. Indira College of Engineering and Management.</p>
       </div>
+
+            {/* Toast Notification */}
+      {showToast && (
+        <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-80 bg-[#F37021] text-white px-6 py-3 rounded-lg shadow-lg transition-opacity duration-300">
+          <p className="text-center font-semibold">{toastMessage}</p>
+        </div>
+      )}
     </div>
   );
 }

@@ -1,11 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NPFWidget from "./NPFWidget"; // Import the NPFWidget component
 
 function ApplyNowButton() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const openModal = () => {
+    setIsModalOpen(true);
+    setTimeout(() => setIsVisible(true), 10); // Small delay to trigger animation
+  };
+
+  const closeModal = () => {
+    setIsVisible(false);
+    setTimeout(() => setIsModalOpen(false), 300); // Match transition duration
+  };
 
   return (
     <>
@@ -19,11 +27,30 @@ function ApplyNowButton() {
       </div>
 
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-4 rounded-lg max-w-md w-full relative">
+        <div
+          className="fixed inset-0 flex items-center justify-center z-50"
+          style={{
+            background: "rgba(0, 0, 0, 0.3)",
+            backdropFilter: "blur(5px)",
+            opacity: isVisible ? 1 : 0,
+            transition: "opacity 0.3s ease",
+          }}
+        >
+          <div
+            className="p-6 rounded-lg max-w-md w-full relative"
+            style={{
+              background: "rgba(255, 255, 255, 0.1)",
+              backdropFilter: "blur(10px)",
+              border: "1px solid rgba(255, 255, 255, 0.2)",
+              boxShadow: "0 8px 32px rgba(0, 0, 0, 0.37)",
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? "scale(1)" : "scale(0.95)",
+              transition: "opacity 0.3s ease, transform 0.3s ease",
+            }}
+          >
             <button
               onClick={closeModal}
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+              className="absolute top-2 right-2 text-white hover:text-gray-300 text-2xl"
             >
               ×
             </button>

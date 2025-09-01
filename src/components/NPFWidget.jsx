@@ -18,7 +18,7 @@ const NPFWidget = () => {
   return (
     <div
       className="npf_wgts"
-      data-height="400px"  // Updated height
+      data-height="480px"  // Updated height
       data-w="ffa434467d9fc7db2062d18fe591f9ff"  // Updated widget ID for IGBS MBA
     ></div>
   );

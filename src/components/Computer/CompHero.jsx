@@ -10,9 +10,10 @@ function CompHero() {
   const words = useMemo(
     () => [
       "Business",
+      "Innovation",
       "Strategy",
-      "Finance",
-      "Marketing",
+      "Leadership",
+      "Opportunity"
     ],
     []
   );
@@ -21,11 +22,9 @@ function CompHero() {
     const handleTyping = () => {
       const currentWord = words[currentWordIndex];
 
-
       if (!isDeleting) {
         if (currentText === currentWord) {
-          setTimeout(() => setIsDeleting(true), 1000);
-          setTimeout(() => setIsDeleting(true), 1000);
+          setTimeout(() => setIsDeleting(true), 1000); // Single pause before deleting
           return;
         }
         setCurrentText(currentWord.substring(0, currentText.length + 1));
@@ -39,9 +38,7 @@ function CompHero() {
       }
     };
 
-    const timeout = setTimeout(handleTyping, isDeleting ? 80 : 120);
-
-    const timeout = setTimeout(handleTyping, isDeleting ? 80 : 120);
+    const timeout = setTimeout(handleTyping, isDeleting ? 80 : 120); // Single timeout declaration
     return () => clearTimeout(timeout);
   }, [currentText, isDeleting, currentWordIndex, words]);
 
@@ -66,17 +63,17 @@ function CompHero() {
       {/* Left side content */}
       <div className="flex flex-col items-center md:items-start z-20 w-full md:w-1/2 text-center md:text-left">
         <h1 className="text-[40px] sm:text-[50px] md:text-[60px] text-[#ffffff] font-semibold leading-tight mb-6">
-          Creating Leaders in{" "}
+          Redefining{" "}
           <span className="relative inline-block">
             {currentText}
             <span className="ml-1 animate-blink">|</span>
           </span>{" "}
           with{" "}
           <span className="text-[#F37021] font-bold mech-hero-wrapper">MBA</span>{" "}
-          at ICEM.
+          at IGSB.
         </h1>
         <p className="mt-4 text-lg sm:text-xl md:text-2xl">
-          Accelerate your ambitions into leadership through experiential learning, specializations, and global exposure.
+         Learn, innovate, and lead with an MBA aligned to global standards and industry needs.
         </p>
       </div>
 
