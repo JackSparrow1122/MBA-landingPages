@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "../assets/images/Icem-footer-logo.png";
+import logo from "../assets/images/logo.png";
 
 function Footer() {
   const [showToast, setShowToast] = useState(false);
@@ -150,7 +150,7 @@ function Footer() {
 
       {/* Copyright Section */}
       <div className="bg-[#023b5e] py-4 px-8 md:px-16 text-left text-white text-sm mt-auto">
-        <p>© 2024. Indira College of Engineering and Management.</p>
+        <p>© 2025. Indira Global School of Business (IGSB).</p>
       </div>
 
             {/* Toast Notification */}

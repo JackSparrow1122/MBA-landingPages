@@ -9,11 +9,9 @@ function CompHero() {
 
   const words = useMemo(
     () => [
-      "Business",
-      "Innovation",
-      "Strategy",
-      "Leadership",
-      "Opportunity"
+      "Lead.",
+      "Excel.",
+      "Inspire."
     ],
     []
   );
@@ -63,14 +61,11 @@ function CompHero() {
       {/* Left side content */}
       <div className="flex flex-col items-center md:items-start z-20 w-full md:w-1/2 text-center md:text-left">
         <h1 className="text-[40px] sm:text-[50px] md:text-[60px] text-[#ffffff] font-semibold leading-tight mb-6">
-          Redefining{" "}
+          <span className="text-[#F37021] font-bold mech-hero-wrapper">MBA</span> at IGSB is designed to make you{" "}
           <span className="relative inline-block">
             {currentText}
             <span className="ml-1 animate-blink">|</span>
-          </span>{" "}
-          with{" "}
-          <span className="text-[#F37021] font-bold mech-hero-wrapper">MBA</span>{" "}
-          at IGSB.
+          </span>
         </h1>
         <p className="mt-4 text-lg sm:text-xl md:text-2xl">
          Learn, innovate, and lead with an MBA aligned to global standards and industry needs.
