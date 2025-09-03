@@ -1,17 +1,24 @@
 import { useEffect } from "react";
 
 function ThankYouIGSB() {
-useEffect(() => {
-  if (window.gtag) {
-    console.log("IGSB Conversion Fired ✅");
-    window.gtag("event", "conversion", {
-      send_to: "AW-17526005159/rg6fCN7u0ZIbEKe7hqVB",
-    });
-  } else {
-    console.warn("gtag not found ❌");
-  }
-}, []);
-
+  useEffect(() => {
+    if (window.gtag) {
+      console.log("IGSB Conversion Fired ✅");
+      window.gtag("event", "conversion", {
+        send_to: "AW-17526005159/rg6fCN7u0ZIbEKe7hqVB",
+      });
+    } else {
+      console.warn("gtag not found ❌");
+    }
+    
+    // Add automatic redirect after 5 seconds
+    const timer = setTimeout(() => {
+      window.location.href = "/";
+    }, 5000);
+    
+    // Cleanup timer on unmount
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#FCFAEE] flex items-center justify-center px-4">
@@ -26,6 +33,7 @@ useEffect(() => {
             02114 – 691417
           </a>
         </p>
+        <p className="text-gray-500 text-sm mb-4">You will be redirected to the home page in 5 seconds.</p>
         <button
           onClick={() => (window.location.href = "/")}
           className="w-full bg-[#F37021] text-white py-2 px-4 rounded-md hover:bg-[#d65b0e] transition-colors font-semibold"
