@@ -12,7 +12,7 @@ import ApplyNowButton from './components/ApplyNowButton';
 
 function App() {
   return (
-    <Router basename="/mba-admission-2025">
+    <Router basename="/">
       <div className="relative">
         <Navbar />
         <Routes>

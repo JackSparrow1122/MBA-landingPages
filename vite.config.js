@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/mba-admission-2025/', // Ensure base path is set to '/' for correct routing
+  base: '/', // Ensure base path is set to '/' for correct routing
 })
