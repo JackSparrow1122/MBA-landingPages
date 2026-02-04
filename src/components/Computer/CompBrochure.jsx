@@ -30,11 +30,11 @@ function CompBrochure() {
 
   return (
     <>
-      <div className="flex justify-center px-6 sm:px-12 md:px-16 py-8 bg-[#F7F3EF]">
-        <div className="w-full max-w-6xl bg-[#FCFAEE] p-6 sm:p-8 md:p-10 rounded-3xl flex flex-col sm:flex-row justify-between items-center border border-[#f37021] shadow-lg transition-all">
+      <div className="flex justify-center px-6 sm:px-12 md:px-16 py-8 bg-[#10404A]">
+        <div className="w-full max-w-6xl bg-[#3AAFA9] p-6 sm:p-8 md:p-10 rounded-3xl flex flex-col sm:flex-row justify-between items-center border border-[#f37021] shadow-lg transition-all">
           {/* Text Section */}
           <div className="w-full sm:w-2/3 mb-4 sm:mb-0">
-            <p className="text-base sm:text-lg md:text-xl text-[#F37021] text-center sm:text-left">
+            <p className="text-base sm:text-lg md:text-xl text-white text-center sm:text-left">
               Get the brochure to explore our industry-aligned, outcome-based curriculum and complete programme details.
             </p>
           </div>
@@ -43,7 +43,7 @@ function CompBrochure() {
           <div className="w-full sm:w-auto flex justify-center sm:justify-end">
             <button
               onClick={openModal}
-              className="bg-[#F7F3EF] border border-[#f37021] text-[#F37021] px-6 py-3 rounded-3xl hover:bg-[#f37021] hover:text-black transition duration-300 flex items-center space-x-2 text-sm sm:text-base md:text-lg"
+              className="bg-[#10404A] border border-[#f37021] text-white px-6 py-3 rounded-3xl hover:bg-white hover:text-black transition duration-300 flex items-center space-x-2 text-sm sm:text-base md:text-lg"
             >
               <FontAwesomeIcon icon={faDownload} />
               <span>Download Brochure</span>

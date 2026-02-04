@@ -51,7 +51,7 @@ const App = () => {
   };
 
   return (
-    <div className="flex poppins-regular flex-col justify-center overflow-hidden items-center py-6 md:py-12 bg-[#F7F3EF] px-0 md:px-16 font-poppins">
+    <div className="flex poppins-regular flex-col justify-center overflow-hidden items-center py-6 md:py-12 px-0 md:px-16 font-poppins">
       {/* Heading above the slider */}
       <div className="text-xl md:text-3xl font-semibold text-gray-800 mb-6">
         Our Recruiters
@@ -70,7 +70,7 @@ const App = () => {
                     <img
                       src={logo}
                       alt={`Logo ${idx + 1}`}
-                      className="w-36 h-20 object-contain" // Further increased width and height
+                      className="w-36 h-20 object-contain border border-1" // Further increased width and height
                     />
                   </div>
                 ))}

@@ -26,7 +26,7 @@ function CompJoin() {
         ></div>
 
         {/* Blue overlay */}
-        <div className="absolute top-0 left-0 w-full h-full bg-[#F37021] opacity-70 z-10"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[#3AAFA9] opacity-70 z-10"></div>
 
         {/* Text content */}
         <div className="relative z-20 px-8 md:px-16 py-4">

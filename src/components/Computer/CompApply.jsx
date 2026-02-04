@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import backgroundImage from "../../assets/images/plane.png"; // Make sure the path is correct
-import NPFWidget from "../NPFWidget"; // Import the NPFWidget component
+import backgroundImage from "../../assets/images/plane.png";
+import NPFWidget from "../NPFWidget";
 
 const AdmissionProcess = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -8,48 +8,47 @@ const AdmissionProcess = () => {
 
   const openModal = () => {
     setIsModalOpen(true);
-    setTimeout(() => setIsVisible(true), 10); // Small delay to trigger animation
+    setTimeout(() => setIsVisible(true), 10);
   };
 
   const closeModal = () => {
     setIsVisible(false);
-    setTimeout(() => setIsModalOpen(false), 300); // Match transition duration
+    setTimeout(() => setIsModalOpen(false), 300);
   };
 
   return (
     <>
+      {/* SECTION */}
       <div
-        className="relative bg-[#FCFAEE] px-6 sm:px-12 md:px-16 py-12 text-center text-black shadow-lg bg-contain bg-no-repeat bg-center"
+        className="relative px-6 sm:px-12 md:px-16 py-14 text-center text-white bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        {/* Orange overlay above bg image, behind cards */}
-        <div className="absolute inset-0 bg-[#F7F3EF] opacity-80 z-0"></div>
+        {/* Teal Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#10404A] via-[#3AAFA9] to-[#10404A] opacity-90"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 md:mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             How to Apply
           </h2>
-          <p className="text-base sm:text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-            Follow these simple steps to apply for the MBA Programme at IGSB, Pune:
+          <p className="text-base sm:text-lg md:text-xl mb-10 max-w-3xl mx-auto text-gray-100">
+            Follow these simple steps to apply for the MBA Programme at IGSB, Pune
           </p>
 
-          {/* Steps Container */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8">
+          {/* STEPS */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {[1, 2, 3, 4, 5].map((step) => (
               <div
                 key={step}
-                className="relative bg-[#f7a35c] text-black p-6 shadow-xl rounded-lg w-full"
-                style={{ backgroundColor: "rgba(243, 112, 33, 0.35)" }}
+                className="relative bg-white/90 text-[#10404A] p-6 rounded-xl shadow-xl hover:-translate-y-2 transition-all duration-300"
               >
-                <div
-                  className="absolute -top-3 -left-3 bg-[#F37021] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg text-lg sm:text-xl"
-                  style={{ backgroundColor: "rgba(243, 112, 33, 0.95)" }}
-                >
+                {/* Step Number */}
+                <div className="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-[#F37021] text-white flex items-center justify-center font-bold shadow-lg">
                   {step}
                 </div>
-                <p className="text-sm sm:text-base md:text-lg mt-2 sm:mt-4">
+
+                <p className="text-sm sm:text-base md:text-lg mt-4">
                   {step === 1 && "Fill out the online application form on our website."}
-                  {step === 2 && "Submit the required documents (mark sheets, ID, etc.)"}
+                  {step === 2 && "Submit the required documents (mark sheets, ID, etc.)."}
                   {step === 3 && "Pay the application fee securely online."}
                   {step === 4 && "Attend the counseling and interview session."}
                   {step === 5 && "Confirm your seat and join IGSB!"}
@@ -58,11 +57,11 @@ const AdmissionProcess = () => {
             ))}
           </div>
 
-          {/* Apply Button */}
-          <div className="mt-8 flex justify-center">
+          {/* APPLY BUTTON */}
+          <div className="mt-10 flex justify-center">
             <button
               onClick={openModal}
-              className="bg-[#F37021] text-white py-3 px-8 rounded-full text-lg sm:text-xl font-semibold shadow-lg hover:bg-[#d65c1a] transition-all"
+              className="bg-[#F37021] hover:bg-[#d65c1a] text-white py-3 px-10 rounded-full text-lg font-semibold shadow-xl transition-all"
             >
               Apply Now
             </button>
@@ -70,31 +69,31 @@ const AdmissionProcess = () => {
         </div>
       </div>
 
+      {/* MODAL */}
       {isModalOpen && (
         <div
           className="fixed inset-0 flex items-center justify-center z-50"
           style={{
-            background: "rgba(0, 0, 0, 0.3)",
-            backdropFilter: "blur(5px)",
+            background: "rgba(16, 64, 74, 0.6)",
+            backdropFilter: "blur(6px)",
             opacity: isVisible ? 1 : 0,
             transition: "opacity 0.3s ease",
           }}
         >
           <div
-            className="p-6 rounded-lg max-w-md w-full relative"
+            className="relative p-6 rounded-xl max-w-md w-full"
             style={{
-              background: "rgba(255, 255, 255, 0.1)",
-              backdropFilter: "blur(10px)",
-              border: "1px solid rgba(255, 255, 255, 0.2)",
-              boxShadow: "0 8px 32px rgba(0, 0, 0, 0.37)",
-              opacity: isVisible ? 1 : 0,
+              background: "rgba(255, 255, 255, 0.15)",
+              backdropFilter: "blur(12px)",
+              border: "1px solid rgba(255,255,255,0.3)",
+              boxShadow: "0 10px 40px rgba(0,0,0,0.4)",
               transform: isVisible ? "scale(1)" : "scale(0.95)",
-              transition: "opacity 0.3s ease, transform 0.3s ease",
+              transition: "all 0.3s ease",
             }}
           >
             <button
               onClick={closeModal}
-              className="absolute top-2 right-2 text-white hover:text-gray-300 text-2xl"
+              className="absolute top-2 right-3 text-white text-2xl hover:text-[#F37021]"
             >
               ×
             </button>
