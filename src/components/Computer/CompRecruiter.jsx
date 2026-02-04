@@ -51,9 +51,9 @@ const App = () => {
   };
 
   return (
-    <div className="flex poppins-regular flex-col justify-center overflow-hidden items-center py-6 md:py-12 px-0 md:px-16 font-poppins">
+    <div className="flex poppins-regular flex-col justify-center overflow-hidden items-center py-6 md:py-6 px-0 md:px-16 font-poppins">
       {/* Heading above the slider */}
-      <div className="text-xl md:text-3xl font-semibold text-gray-800 mb-6">
+      <div className="text-xl md:text-4xl font-semibold text-gray-800 mb-6">
         Our Recruiters
       </div>
       

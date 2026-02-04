@@ -15,15 +15,15 @@ function Computer() {
       {/* Render the child component */}
       <CompHero />
       <CompPointers />
+      <CompRecruiter />
       <ProgramOverview />
-      <MbaCourses/>
+      <MbaCourses />
       <CompOfferings />
       <CompStudying />
       <CompBrochure />
       {/* <CompHighlights /> */}
       <CompJoin />
       <CompCarrer />
-      <CompRecruiter />
       {/* <AutoChatbot /> */}
     </div>
   );
